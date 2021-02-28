@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.ulstyle{
+    display: inline;
+    text-decoration: underline;
+}
+#nav {
+    min-height: 5vh;
+    background: red;
+}
+/* Main section */
+
+#main {
+    background: goldenrod;
+    min-height: 85vh;
+}
+
+/* Input search */
+.input-field {
+    padding: 1rem 2rem;
+    background: blueviolet;
+}
+/* Buttons */
+.buttonone {
+    padding: 1rem 2rem;
+    background: rebeccapurple;
+    color: wheat;
+    border: none;
+    border-radius:  0.3rem;
+}
+
+/* Footer */
+
+#foot {
+    min-height: 10vh;
+    background: pink;
+}
+.ulfoot {
+    background: cornsilk;
+    min-height: 2rem;
+}
+
+/* Footer sections */
+
+#sectionone {
+    background: coral;
+    padding: 1rem;
+}
+#sectiontwo {
+    background: cyan;
+    padding: 1rem;
+}
+.ulright {
+    background: yellow;
+    min-height: 2rem;  
+}
