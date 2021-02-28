@@ -66,6 +66,34 @@ mainElement.appendChild(buttonElement2);
 buttonElement2.className = 'buttonone';
 buttonElement2.textContent = 'Feeling Lucky';
 
+// Lang section
+
+const sectLanguage = document.createElement('section');
+mainElement.appendChild(sectLanguage);
+sectLanguage.id = 'lang';
+sectLanguage.textContent = 'Google offered in:';
+
+const secLink1 = document.createElement('li');
+sectLanguage.appendChild(secLink1);
+
+const a10 = document.createElement('a');
+const linkText10 = document.createTextNode('Polski');
+a10.append(linkText10);
+a10.title = 'Polski';
+a10.href = 'https://www.google.pl/';
+secLink1.appendChild(a10);
+
+
+const secLink2 = document.createElement('li');
+sectLanguage.appendChild(secLink2);
+    
+const a11 = document.createElement('a');
+const linkText11 = document.createTextNode('Gaeilge');
+a11.append(linkText11);
+a11.title = 'Gaeilge';
+a11.href = 'https://www.google.ie/';
+secLink2.appendChild(a11);
+
 // Footer
 const newFooter = document.createElement('footer');
 document.body.appendChild(newFooter);
@@ -100,36 +128,36 @@ fooItem.appendChild(a3);
 
 
 const fooItem2 = document.createElement('li');
-    righT.appendChild(fooItem2);
+righT.appendChild(fooItem2);
 
-    const a4 = document.createElement('a');
-    const linkText4 = document.createTextNode('Advertising');
-    a4.append(linkText4);
-    a4.title = 'Advertising';
-    a4.href = 'https://ads.google.com/intl/en_ie/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1';
-    fooItem2.appendChild(a4);
+const a4 = document.createElement('a');
+const linkText4 = document.createTextNode('Advertising');
+a4.append(linkText4);
+a4.title = 'Advertising';
+a4.href = 'https://ads.google.com/intl/en_ie/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1';
+fooItem2.appendChild(a4);
 
 
 const fooItem3 = document.createElement('li');
-    righT.appendChild(fooItem3);
+righT.appendChild(fooItem3);
 
-    const a5 = document.createElement('a');
-    const linkText5 = document.createTextNode('Business');
-    a5.append(linkText5);
-    a5.title = 'Business';
-    a5.href = 'https://www.google.ie/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none';
-    fooItem3.appendChild(a5);
+ const a5 = document.createElement('a');
+const linkText5 = document.createTextNode('Business');
+a5.append(linkText5);
+a5.title = 'Business';
+a5.href = 'https://www.google.ie/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none';
+fooItem3.appendChild(a5);
 
 
 const fooItem4 = document.createElement('li');
-    righT.appendChild(fooItem4);
+righT.appendChild(fooItem4);
 
-    const a6 = document.createElement('a');
-    const linkText6 = document.createTextNode('How Search works');
-    a6.append(linkText6);
-    a6.title = 'How Search works';
-    a6.href = 'https://www.google.com/search/howsearchworks/?fg=1';
-    fooItem4.appendChild(a6);
+const a6 = document.createElement('a');
+const linkText6 = document.createTextNode('How Search works');
+a6.append(linkText6);
+a6.title = 'How Search works';
+a6.href = 'https://www.google.com/search/howsearchworks/?fg=1';
+fooItem4.appendChild(a6);
 
 // Second footer section
 
@@ -146,31 +174,31 @@ const fooItemr = document.createElement('li');
 secRight.appendChild(fooItemr);
 
 const a7 = document.createElement('a');
-    const linkText7 = document.createTextNode('Privacy');
-    a7.append(linkText7);
-    a7.title = 'Privacy';
-    a7.href = 'https://policies.google.com/privacy?hl=en-IE&fg=1';
-    fooItemr.appendChild(a7);
+const linkText7 = document.createTextNode('Privacy');
+ a7.append(linkText7);
+a7.title = 'Privacy';
+a7.href = 'https://policies.google.com/privacy?hl=en-IE&fg=1';
+fooItemr.appendChild(a7);
 
 const fooItem2r = document.createElement('li');
 secRight.appendChild(fooItem2r);
 
 const a8 = document.createElement('a');
-    const linkText8 = document.createTextNode('Terms');
-    a8.append(linkText8);
-    a8.title = 'Terms';
-    a8.href = 'https://policies.google.com/terms?hl=en-IE&fg=1';
-    fooItem2r.appendChild(a8);
+const linkText8 = document.createTextNode('Terms');
+a8.append(linkText8);
+a8.title = 'Terms';
+a8.href = 'https://policies.google.com/terms?hl=en-IE&fg=1';
+fooItem2r.appendChild(a8);
 
 const fooItem3r = document.createElement('li');
 secRight.appendChild(fooItem3r);
 
 const a9 = document.createElement('a');
-    const linkText9 = document.createTextNode('Search Settings');
-    a9.append(linkText9);
-    a9.title = 'Search Settings';
-    a9.href = 'https://www.google.ie/preferences?hl=en-IE&fg=1';
-    fooItem3r.appendChild(a9);
+const linkText9 = document.createTextNode('Search Settings');
+a9.append(linkText9);
+a9.title = 'Search Settings';
+a9.href = 'https://www.google.ie/preferences?hl=en-IE&fg=1';
+fooItem3r.appendChild(a9);
 
 
 

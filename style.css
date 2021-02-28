@@ -34,6 +34,13 @@
     border-radius:  0.3rem;
 }
 
+/* Lang */
+
+#lang {
+    background: skyblue;
+    padding: 2rem;
+}
+
 /* Footer */
 
 #foot {
