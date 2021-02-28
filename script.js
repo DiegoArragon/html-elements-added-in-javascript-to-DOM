@@ -146,16 +146,31 @@ const fooItemr = document.createElement('li');
 secRight.appendChild(fooItemr);
 
 const a7 = document.createElement('a');
-    const linkText7 = document.createTextNode('How Search works');
+    const linkText7 = document.createTextNode('Privacy');
     a7.append(linkText7);
-    a7.title = 'How Search works';
-    a7.href = 'https://www.google.com/search/howsearchworks/?fg=1';
+    a7.title = 'Privacy';
+    a7.href = 'https://policies.google.com/privacy?hl=en-IE&fg=1';
     fooItemr.appendChild(a7);
 
 const fooItem2r = document.createElement('li');
-secRight.appendChild(fooItem2r).textContent = 'Mario 2';
+secRight.appendChild(fooItem2r);
+
+const a8 = document.createElement('a');
+    const linkText8 = document.createTextNode('Terms');
+    a8.append(linkText8);
+    a8.title = 'Terms';
+    a8.href = 'https://policies.google.com/terms?hl=en-IE&fg=1';
+    fooItem2r.appendChild(a8);
+
 const fooItem3r = document.createElement('li');
-secRight.appendChild(fooItem3r).textContent = 'Mario 3';
+secRight.appendChild(fooItem3r);
+
+const a9 = document.createElement('a');
+    const linkText9 = document.createTextNode('Search Settings');
+    a9.append(linkText9);
+    a9.title = 'Search Settings';
+    a9.href = 'https://www.google.ie/preferences?hl=en-IE&fg=1';
+    fooItem3r.appendChild(a9);
 
 
 
