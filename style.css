@@ -2,16 +2,32 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+a {
+text-decoration: none;
+}
 /* Header */
 .ulstyle{
     display: inline;
-    text-decoration: underline;
 }
 #nav {
     min-height: 5vh;
-    background: red;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
 }
 /* Main section */
 
