@@ -6,6 +6,7 @@
 }
 a {
 text-decoration: none;
+color: rgba(0,0,0,0.87);
 }
 /* Header */
 .ulstyle{
@@ -13,48 +14,81 @@ text-decoration: none;
 }
 #nav {
     min-height: 5vh;
-    display: flex;
+    display: inline-flex;
     width: 90%;
     margin: auto;
-    padding: 2rem;
-    align-items: center;
+    padding: 1rem;
+    align-items: self-end;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 #nav ul {
     display: flex;
-    flex: 1 1 40rem;
+    flex: 0.1 1 1rem;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     font-size: 0.8rem;
-    text-transform: uppercase;
+}
+#nav ul li {
+    padding-right: 1rem;
 }
 /* Main section */
 
 #main {
-    background: goldenrod;
-    min-height: 85vh;
+    background: white;
+    min-height: 72vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+#main img {
+    width: auto;
+    margin: 8rem auto 1rem;
 }
 
 /* Input search */
 .input-field {
     padding: 1rem 2rem;
-    background: blueviolet;
+    background: white;
+    background-image: url();
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 2rem;
+    width: 30%;
 }
 /* Buttons */
+
+#buttelemnts {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    padding: 2rem 
+}
+
 .buttonone {
-    padding: 1rem 2rem;
-    background: rebeccapurple;
-    color: wheat;
+    padding: 0.6rem 2rem;
+    background: rgb(230, 230, 230);
+    color: rgb(77, 77, 77);
     border: none;
     border-radius:  0.3rem;
+    margin: 1rem 2rem;
 }
 
 /* Lang */
 
 #lang {
-    background: skyblue;
-    padding: 2rem;
+    display: flex;
+}
+#lang li {
+    text-decoration: none;
+    list-style: none;
+    font-weight: normal;
+}
+#lang li a {
+    color: darkslateblue;
+    margin: 1rem;
 }
 
 /* Footer */

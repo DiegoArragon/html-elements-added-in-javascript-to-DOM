@@ -16,10 +16,10 @@ ulList.appendChild(liItem);
 
 // Activ link 1
 const a = document.createElement('a');
-const linkText = document.createTextNode('My First Link');
+const linkText = document.createTextNode('Gmail');
 a.append(linkText);
-a.title = 'My First Link';
-a.href = 'https://google.ie';
+a.title = 'Gmail';
+a.href = 'https://mail.google.com/';
 liItem.appendChild(a);
 
 
@@ -28,10 +28,10 @@ ulList.appendChild(liItem2);
 
 // Activ link 2
 const a2 = document.createElement('a');
-const linkText2 = document.createTextNode('My Second Link');
+const linkText2 = document.createTextNode('Images');
 a2.append(linkText2);
-a2.title = 'My Second Link';
-a2.href = 'https://loveartdesign.com';
+a2.title = 'Images';
+a2.href = 'https://www.google.ie/imghp?hl=en&ogbl';
 liItem2.appendChild(a2);
 
 // Main section
@@ -56,13 +56,17 @@ inputField.className = 'input-field';
 
 // Buttons
 
+const buttonsElement = document.createElement('section');
+main.appendChild(buttonsElement);
+buttonsElement.id = 'buttelemnts';
+
 const buttonElement = document.createElement('button');
-mainElement.appendChild(buttonElement);
+buttonsElement.appendChild(buttonElement);
 buttonElement.className = 'buttonone';
 buttonElement.textContent = 'Google Search';
 
 const buttonElement2 = document.createElement('button');
-mainElement.appendChild(buttonElement2);
+buttonsElement.appendChild(buttonElement2);
 buttonElement2.className = 'buttonone';
 buttonElement2.textContent = 'Feeling Lucky';
 
