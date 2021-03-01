@@ -5,7 +5,7 @@ const newElement = document.createElement('header');
 document.body.appendChild(newElement);
 newElement.id = 'nav';
 
-// Ul element
+// Ul Element
 
 const ulList = document.createElement('ul');
 newElement.appendChild(ulList);
@@ -14,7 +14,7 @@ ulList.className = 'ulstyle';
 const liItem = document.createElement('li');
 ulList.appendChild(liItem);
 
-// Activ link 1
+// Activ link
 const a = document.createElement('a');
 const linkText = document.createTextNode('Gmail');
 a.append(linkText);
@@ -26,7 +26,7 @@ liItem.appendChild(a);
 const liItem2 = document.createElement('li');
 ulList.appendChild(liItem2);
 
-// Activ link 2
+// Activ link
 const a2 = document.createElement('a');
 const linkText2 = document.createTextNode('Images');
 a2.append(linkText2);
@@ -40,7 +40,7 @@ const mainElement = document.createElement('main');
 document.body.appendChild(mainElement);
 mainElement.id = 'main';
 
-// Google logo
+// Google Logo
 
 const img = document.createElement('img');
 img.setAttribute('src', 'https://www.google.ie/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
@@ -77,6 +77,7 @@ mainElement.appendChild(sectLanguage);
 sectLanguage.id = 'lang';
 sectLanguage.textContent = 'Google offered in:';
 
+// Activ link
 const secLink1 = document.createElement('li');
 sectLanguage.appendChild(secLink1);
 
@@ -87,7 +88,7 @@ a10.title = 'Polski';
 a10.href = 'https://www.google.pl/';
 secLink1.appendChild(a10);
 
-
+// Activ link
 const secLink2 = document.createElement('li');
 sectLanguage.appendChild(secLink2);
     
@@ -105,7 +106,7 @@ newFooter.id = 'foot';
 
 // Left link
 const footEr = document.getElementById('foot');
-const lefT = document.createElement('li');
+const lefT = document.createElement('span');
 footEr.appendChild(lefT);
 lefT.textContent = 'Ireland';
 

@@ -9,14 +9,10 @@ text-decoration: none;
 color: rgba(0,0,0,0.87);
 }
 /* Header */
-.ulstyle{
-    display: inline;
-}
 #nav {
-    min-height: 5vh;
+    min-height: 10vh;
     display: inline-flex;
-    width: 90%;
-    margin: auto;
+    width: 100%;
     padding: 1rem;
     align-items: self-end;
     flex-wrap: wrap;
@@ -37,7 +33,7 @@ color: rgba(0,0,0,0.87);
 
 #main {
     background: white;
-    min-height: 72vh;
+    min-height: 77.6vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -55,7 +51,7 @@ color: rgba(0,0,0,0.87);
     background-image: url();
     border: 1px solid rgb(224, 224, 224);
     border-radius: 2rem;
-    width: 30%;
+    width: 40%;
 }
 /* Buttons */
 
@@ -80,6 +76,7 @@ color: rgba(0,0,0,0.87);
 
 #lang {
     display: flex;
+    font-size: 0.9rem;
 }
 #lang li {
     text-decoration: none;
@@ -95,24 +92,67 @@ color: rgba(0,0,0,0.87);
 
 #foot {
     min-height: 10vh;
-    background: pink;
+    background: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
 }
-.ulfoot {
-    background: cornsilk;
-    min-height: 2rem;
+#foot ul {
+    list-style: none;  
 }
-
+#foot span {
+    width: 100%;
+    min-height: 3rem;
+    padding: 1rem;
+}
 /* Footer sections */
 
 #sectionone {
-    background: coral;
     padding: 1rem;
+    width: 30%;
+    border-top: 1px solid rgb(219, 219, 219);
 }
 #sectiontwo {
-    background: cyan;
-    padding: 1rem;
+    width: 70%;
+    padding: 1rem; 
+    border-top: 1px solid rgb(219, 219, 219);
 }
 .ulright {
-    background: yellow;
     min-height: 2rem;  
+    display: flex;
+    justify-content: flex-end;
+}
+.ulright li {
+    margin-right: 2rem;
+}
+.ulfoot {
+    min-height: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1140px) {
+    .input-field {
+        width: 70%;
+    }
+    #buttelemnts {
+        width: 100%;
+    }
+    #foot {
+        flex-direction: column;
+    }
+    #sectionone {
+        width: 100%;
+        justify-content: center;
+    }
+    #sectiontwo {
+        width: 100%;
+        justify-content: center;
+    }
+    .ulright {
+        justify-content: center;
+    }
 }
