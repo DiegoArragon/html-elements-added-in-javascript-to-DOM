@@ -82,10 +82,10 @@ const secLink1 = document.createElement('li');
 sectLanguage.appendChild(secLink1);
 
 const a10 = document.createElement('a');
-const linkText10 = document.createTextNode('Polski');
+const linkText10 = document.createTextNode('English');
 a10.append(linkText10);
-a10.title = 'Polski';
-a10.href = 'https://www.google.pl/';
+a10.title = 'English';
+a10.href = 'https://www.google.com/';
 secLink1.appendChild(a10);
 
 // Activ link
