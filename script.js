@@ -1,15 +1,21 @@
-
 // Header Section
 
+const rootElement = document.createElement('div');
+document.body.appendChild(rootElement);
+rootElement.id = 'root';
+
 const newElement = document.createElement('header');
-document.body.appendChild(newElement);
-newElement.id = 'nav';
+rootElement.appendChild(newElement);
+
+const nav = document.createElement('nav');
+newElement.appendChild(nav);
+nav.className = 'nav';
 
 // Ul Element
 
 const ulList = document.createElement('ul');
-newElement.appendChild(ulList);
-ulList.className = 'ulstyle';
+nav.appendChild(ulList);
+ulList.className = 'nav__ul';
 
 const liItem = document.createElement('li');
 ulList.appendChild(liItem);
@@ -21,7 +27,6 @@ a.append(linkText);
 a.title = 'Gmail';
 a.href = 'https://mail.google.com/';
 liItem.appendChild(a);
-
 
 const liItem2 = document.createElement('li');
 ulList.appendChild(liItem2);
@@ -37,8 +42,7 @@ liItem2.appendChild(a2);
 // Main section
 
 const mainElement = document.createElement('main');
-document.body.appendChild(mainElement);
-mainElement.id = 'main';
+rootElement.appendChild(mainElement);
 
 // Google Logo
 
@@ -52,34 +56,37 @@ body.append(img);
 const inputField = document.createElement('input');
 inputField.type = 'search'; inputField.value = '';
 mainElement.appendChild(inputField);
-inputField.className = 'input-field';
+inputField.id = 'search';
 
 // Buttons
 
 const buttonsElement = document.createElement('section');
-main.appendChild(buttonsElement);
-buttonsElement.id = 'buttelemnts';
+mainElement.appendChild(buttonsElement);
+buttonsElement.className = 'section__buttons';
 
 const buttonElement = document.createElement('button');
 buttonsElement.appendChild(buttonElement);
-buttonElement.className = 'buttonone';
+buttonElement.className = 'section__buttons-button';
 buttonElement.textContent = 'Google Search';
 
 const buttonElement2 = document.createElement('button');
 buttonsElement.appendChild(buttonElement2);
-buttonElement2.className = 'buttonone';
+buttonElement2.className = 'section__buttons-button';
 buttonElement2.textContent = 'Feeling Lucky';
 
 // Lang section
 
 const sectLanguage = document.createElement('section');
 mainElement.appendChild(sectLanguage);
-sectLanguage.id = 'lang';
+sectLanguage.className = 'section__lang';
 sectLanguage.textContent = 'Google offered in:';
+
+const ulButtons = document.createElement('ul');
+sectLanguage.appendChild(ulButtons);
 
 // Activ link
 const secLink1 = document.createElement('li');
-sectLanguage.appendChild(secLink1);
+ulButtons.appendChild(secLink1);
 
 const a10 = document.createElement('a');
 const linkText10 = document.createTextNode('English');
@@ -90,7 +97,7 @@ secLink1.appendChild(a10);
 
 // Activ link
 const secLink2 = document.createElement('li');
-sectLanguage.appendChild(secLink2);
+ulButtons.appendChild(secLink2);
     
 const a11 = document.createElement('a');
 const linkText11 = document.createTextNode('Gaeilge');
@@ -101,109 +108,103 @@ secLink2.appendChild(a11);
 
 // Footer
 const newFooter = document.createElement('footer');
-document.body.appendChild(newFooter);
-newFooter.id = 'foot';
+rootElement.appendChild(newFooter);
 
 // Left link
-const footEr = document.getElementById('foot');
-const lefT = document.createElement('span');
-footEr.appendChild(lefT);
-lefT.textContent = 'Ireland';
+const footerText = document.createElement('span');
+newFooter.appendChild(footerText);
+footerText.className = 'footer__text';
+footerText.textContent = 'Ireland';
 
-// First footer section
+// Left footer section
 
 const sectionElement1 = document.createElement('section');
 newFooter.appendChild(sectionElement1);
-sectionElement1.id = 'sectionone';
+sectionElement1.className = 'footer__left';
 
 // List left and links
-const righT = document.createElement('ul');
-sectionElement1.appendChild(righT);
-righT.className = 'ulfoot';
+const linksLeft = document.createElement('ul');
+sectionElement1.appendChild(linksLeft);
 
-const fooItem = document.createElement('li');
-righT.appendChild(fooItem)
+const itemLeft = document.createElement('li');
+linksLeft.appendChild(itemLeft)
 
 const a3 = document.createElement('a');
 const linkText3 = document.createTextNode('About');
 a3.append(linkText3);
 a3.title = 'About';
 a3.href = 'https://about.google/?utm_source=google-IE&utm_medium=referral&utm_campaign=hp-footer&fg=1';
-fooItem.appendChild(a3);
+itemLeft.appendChild(a3);
 
-
-const fooItem2 = document.createElement('li');
-righT.appendChild(fooItem2);
+const itemLeft2 = document.createElement('li');
+linksLeft.appendChild(itemLeft2);
 
 const a4 = document.createElement('a');
 const linkText4 = document.createTextNode('Advertising');
 a4.append(linkText4);
 a4.title = 'Advertising';
 a4.href = 'https://ads.google.com/intl/en_ie/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1';
-fooItem2.appendChild(a4);
+itemLeft2.appendChild(a4);
 
+const itemLeft3 = document.createElement('li');
+linksLeft.appendChild(itemLeft3);
 
-const fooItem3 = document.createElement('li');
-righT.appendChild(fooItem3);
-
- const a5 = document.createElement('a');
+const a5 = document.createElement('a');
 const linkText5 = document.createTextNode('Business');
 a5.append(linkText5);
 a5.title = 'Business';
 a5.href = 'https://www.google.ie/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none';
-fooItem3.appendChild(a5);
+itemLeft3.appendChild(a5);
 
-
-const fooItem4 = document.createElement('li');
-righT.appendChild(fooItem4);
+const itemLeft4 = document.createElement('li');
+linksLeft.appendChild(itemLeft4);
 
 const a6 = document.createElement('a');
 const linkText6 = document.createTextNode('How Search works');
 a6.append(linkText6);
 a6.title = 'How Search works';
 a6.href = 'https://www.google.com/search/howsearchworks/?fg=1';
-fooItem4.appendChild(a6);
+itemLeft4.appendChild(a6);
 
-// Second footer section
+// Right footer section
 
 const sectionElement2 = document.createElement('section');
 newFooter.appendChild(sectionElement2);
-sectionElement2.id = 'sectiontwo';
+sectionElement2.className = 'footer__right';
 
 // List right and links
-const secRight = document.createElement('ul');
-sectionElement2.appendChild(secRight);
-secRight.className = 'ulright';
+const linksRight = document.createElement('ul');
+sectionElement2.appendChild(linksRight);
 
-const fooItemr = document.createElement('li');
-secRight.appendChild(fooItemr);
+const itemRight = document.createElement('li');
+linksRight.appendChild(itemRight);
 
 const a7 = document.createElement('a');
 const linkText7 = document.createTextNode('Privacy');
  a7.append(linkText7);
 a7.title = 'Privacy';
 a7.href = 'https://policies.google.com/privacy?hl=en-IE&fg=1';
-fooItemr.appendChild(a7);
+itemRight.appendChild(a7);
 
-const fooItem2r = document.createElement('li');
-secRight.appendChild(fooItem2r);
+const itemRight2 = document.createElement('li');
+linksRight.appendChild(itemRight2);
 
 const a8 = document.createElement('a');
 const linkText8 = document.createTextNode('Terms');
 a8.append(linkText8);
 a8.title = 'Terms';
 a8.href = 'https://policies.google.com/terms?hl=en-IE&fg=1';
-fooItem2r.appendChild(a8);
+itemRight2.appendChild(a8);
 
-const fooItem3r = document.createElement('li');
-secRight.appendChild(fooItem3r);
+const itemRight3 = document.createElement('li');
+linksRight.appendChild(itemRight3);
 
 const a9 = document.createElement('a');
 const linkText9 = document.createTextNode('Search Settings');
 a9.append(linkText9);
 a9.title = 'Search Settings';
 a9.href = 'https://www.google.ie/preferences?hl=en-IE&fg=1';
-fooItem3r.appendChild(a9);
+itemRight3.appendChild(a9);
 
 
 
